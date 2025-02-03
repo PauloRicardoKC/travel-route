@@ -43,8 +43,13 @@ root
 ```
 
 ## Migrations ##
+```
 dotnet ef migrations add InitialCreate --project src/TravelRoute.Infra --startup-project src/TravelRoute.API --context TravelRouteDbContext
+```
+
+```
 dotnet ef database update --project src/TravelRoute.Infra --startup-project src/TravelRoute.API --context TravelRouteDbContext
+```
 
 ## Test the endpoints ##
 Add a Route:
